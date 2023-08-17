@@ -21,11 +21,11 @@
     <h1 class="text-center text-2xl font-semibold tracking-wide mt-10">Simple Text Editor</h1>
 
     <section class="max-w-screen-xl mx-auto mt-2 mb-8 p-8 border-2 border-slate-700 bg-blue-200">
-        <div class="flex justify-evenly md:justify-around items-center border-b-2 border-b-slate-700 pb-6 mb-5 gap-2">
+        <div class="flex justify-evenly md:justify-around items-center border-b-2 border-b-slate-700 pb-6 mb-5 gap-2 text-slate-700">
             <div class="flex md:justify-around md:w-1/6 gap-2">
-                <i class="fa-solid fa-bold cursor-pointer"></i>
-                <i class="fa-solid fa-italic cursor-pointer"></i>
-                <i class="fa-solid fa-underline cursor-pointer"></i>
+                <i class="fa-solid fa-bold cursor-pointer" id="bold-btn"></i>
+                <i class="fa-solid fa-italic cursor-pointer" id="italic-btn"></i>
+                <i class="fa-solid fa-underline cursor-pointer" id="underline-btn"></i>
             </div>
             <div class="flex md:w-1/6 md:justify-around gap-2">
                 <i class="fa-solid fa-align-left cursor-pointer"></i>
@@ -40,8 +40,12 @@
             </div>
         </div>
         <div class="w-full mx-auto h-96">
-            <textarea name="" class="w-full h-full border-2 border-slate-700 p-5" id="" style="resize: none;"></textarea>
+            <textarea name="" class="w-full h-full border-2 border-slate-700 p-5" id="text-field" style="resize: none;"></textarea>
         </div>
+        <script src="scripts/utils.js"></script>
+        <script src="scripts/bold.js"></script>
+        <script src="scripts/italic.js"></script>
+        <script src="scripts/underline.js"></script>
     </section>
 
 </body>
