@@ -1,7 +1,12 @@
 const textField = document.getElementById('text-field');
 const boldButton = document.getElementById('bold-btn');
 const italicButton = document.getElementById('italic-btn');
-const underlineButton = document.getElementById('underline-btn')
+const underlineButton = document.getElementById('underline-btn');
+const leftAlignButton = document.getElementById('left-align-button');
+const centerAlignButton = document.getElementById('center-align-button');
+const rightAlignButton = document.getElementById('right-align-button');
+const justifyAlignButton = document.getElementById('justify-align-button');
+const allAlignmentButtons = [leftAlignButton, centerAlignButton, rightAlignButton, justifyAlignButton];
 
 function buttonOn(btn){
     btn.style.fontSize = '1.2rem';
@@ -10,5 +15,13 @@ function buttonOn(btn){
 
 function buttonOff(btn){
     btn.style.fontSize = '1rem';
-    boldButton.style.color = '#334155';
+    btn.style.color = '#334155';
+}
+
+function aligner(btn,alignType){
+    textField.style.textAlign = alignType;
+    for(item of allAlignmentButtons){
+            buttonOff(item);
+    }
+    buttonOn(btn);
 }
