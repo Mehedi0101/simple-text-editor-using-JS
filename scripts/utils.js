@@ -7,6 +7,11 @@ const centerAlignButton = document.getElementById('center-align-button');
 const rightAlignButton = document.getElementById('right-align-button');
 const justifyAlignButton = document.getElementById('justify-align-button');
 const allAlignmentButtons = [leftAlignButton, centerAlignButton, rightAlignButton, justifyAlignButton];
+const fontSizeField = document.getElementById('font-size-field');
+const caseButton = document.getElementById('case-button');
+const colorButton = document.getElementById('color-button');
+
+fontSizeField.value = 16;
 
 function buttonOn(btn){
     btn.style.fontSize = '1.2rem';
